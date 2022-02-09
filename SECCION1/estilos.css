@@ -37,13 +37,13 @@
    display: flex;
    align-items: center;
    justify-content: center;
-   border-radius: 1.25rem;
+   border-radius: 20px;
 } 
 .lista:hover .titulo {
    opacity: 1;
 }
 .lista:hover .imagen img {
-   filter: blur(0.125rem);
+   filter: blur(2px);
 }
  /* para disp. tactiles */
 @media (hover: none) { 
@@ -51,7 +51,7 @@
      opacity: 1;
    }
    .imagen img {
-     filter: blur(0.125rem);
+     filter: blur(2px);
    }
  }
 .menu{
@@ -64,8 +64,7 @@
    border-radius: none;
 }
 .menu img {
-   margin: 0.313rem;
-   padding-top: 0.313rem;
+   margin: 0;
    width: 10.938rem;
    height: auto;
 }
@@ -83,7 +82,7 @@
    font-size: 17px;
    display: block;
 }
-.menuitems li:hover, li.active{
+.menuitems li:hover{
    background-color: rgba(0, 0, 0, .3);
    transition: .4s;
 }
@@ -91,6 +90,7 @@
    font-size: 1.875rem;
 }
 .buscador{
+   
    display: flex;
    justify-content: flex-end;
 }
@@ -126,9 +126,10 @@ ul.show{
   .menuitems li a{
      font-size: 16px;
   }
-  @media screen and (max-width:768px) {
+  @media screen and (max-width:768px)  {
      .menu{
         height: 65px;
+        width: 100vw;
      }
      .menuboton{
         display: inline-flex;
@@ -137,15 +138,31 @@ ul.show{
         position: fixed;
         width: 100vw;
         height: calc(100%-65px);
-        background: rgba(128, 128, 128, 0.192);
+        background: #414141;
         top: -100vw;
         text-align: center;
         transition: all .4s;
         flex-direction: column;
       }
-      .menuitems{
+      .menuitems li{
          margin: 30px 0 0 0;
          line-height: 30px;
+      }
+      .menuitems li:hover{
+         background: none;
+      }
+      .menuitems li a{
+         font-size: 16px;
+         color: white;
+         font-weight: bold;
+      }
+      .menuitems li a:hover{
+         color: #e9183b;
+      }
+   
+      .menu img{
+         font-size: 25px;
+         padding-right: 35px;
       }
      footer{
         width: 100%;
@@ -156,9 +173,21 @@ ul.show{
      .conte_parent{
         display: flex;
         flex-wrap: wrap;
-     }
+      }
+      .deco {
+         font-size: 45px;
+         text-align: center;
+      }
+      .velas{
+        font-size: 45px;
+       text-align: center;
+         }
+   
+      
+    /* MEJORAR BARRA NAVEGACION RESPONSIVE POR EL CARRITO DE COMPRA Y BUSCADOR 
+     o se puede hacer primero la barra de navegacion responsive y despues agregar el buscador con el carrito*/
   }
-
+    
 }
 ::placeholder{
    text-align: center;
@@ -285,10 +314,12 @@ fieldset h5{
 .fotoprod{      
    padding: 0.625rem;                                       /* APLICA PARA SECCIONES 2 3 Y 4 */
    display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-columns: 1fr;
    grid-gap: 0.625rem;
    grid-template-areas:
-    "a  b  c";
+    "a"
+    "b"
+    "c";
 }
 .item1 {
   grid-area: a;
@@ -376,10 +407,6 @@ body{
    box-shadow: 0.188rem 0.188rem 1.25rem 0.188rem;
    font-size: 1.063rem;
 }
-.contact-wrapper{
-   display: grid;
-   grid-template-columns: 2fr 1fr;
-}
 .contact-wrapper>*{
    padding: 1em;
 }
@@ -450,4 +477,18 @@ body{
 }
 .infocontacto ul li{
    padding: 0.313rem;
+}
+@media screen and (min-width: 768px) {
+   .contact-wrapper{
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+   }
+   .fotoprod{      
+      padding: 0.625rem;                                       /* APLICA PARA SECCIONES 2 3 Y 4 */
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 0.625rem;
+      grid-template-areas:
+       "a  b  c";
+   }
 }
