@@ -58,7 +58,7 @@
    height: 5rem;
    width: auto;
    display: flex;
-   justify-content: space-between;
+   justify-content: space-evenly;
    align-items: center;
    background: linear-gradient(to bottom, rgba(238, 148, 148, 0.616),rgba(255, 130, 130, 0.281), rgba(255, 255, 255, 0));
    border-radius: none;
@@ -80,7 +80,7 @@
 }
 .menu .menuitems li a{
    padding: 0.625rem 2.188rem;
-   font-size: 20px;
+   font-size: 17px;
    display: block;
 }
 .menuitems li:hover, li.active{
@@ -126,7 +126,7 @@ ul.show{
   .menuitems li a{
      font-size: 16px;
   }
-  @media screen and (max-width:370px) {
+  @media screen and (max-width:768px) {
      .menu{
         height: 65px;
      }
@@ -138,6 +138,24 @@ ul.show{
         width: 100vw;
         height: calc(100%-65px);
         background: rgba(128, 128, 128, 0.192);
+        top: -100vw;
+        text-align: center;
+        transition: all .4s;
+        flex-direction: column;
+      }
+      .menuitems{
+         margin: 30px 0 0 0;
+         line-height: 30px;
+      }
+     footer{
+        width: 100%;
+     }
+     fieldset {
+        width: 100%;
+     }
+     .conte_parent{
+        display: flex;
+        flex-wrap: wrap;
      }
   }
 
@@ -199,7 +217,7 @@ section fieldset{
 .conte_parent{
    display: flex;
    flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .conte{
    padding: 0.938rem;
@@ -224,7 +242,7 @@ fieldset ul{
    list-style-type: none;
 }
 .promocion {
-   font-size: 3.813rem;
+   font-size: 45px;
    text-align: center;
 }
 
@@ -249,7 +267,7 @@ fieldset ul{
    padding: 0.188rem;
 }
 .textf{
-   width: 30em;
+   width: 25em;
    padding: 0.313rem;
    border-radius: 1.25rem ;
    background: none;
