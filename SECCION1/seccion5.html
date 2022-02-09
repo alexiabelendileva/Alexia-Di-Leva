@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CONTACTO</title>
+  <!--CSS-->
+  <link rel="stylesheet" href="estilos.css" />
+  <!--GOOGLE FONTS-->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet" />
+  <!--FONTAWESOME-->
+  <script src="https://kit.fontawesome.com/b2a02d1612.js" crossorigin="anonymous"></script>
+  <!--CSS ANIMADO-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="shortcut icon" href="..\images\tdicon.ico" type="image" />
+</head>
+
+<body>
+  <!--inicio header y barra de navegacion-->
+  <header>
+    <nav class="menu">
+      <label><a class="imagenlogo" href="index.html"><img src="..\images\tdsinfondo.png" /></a></label>
+      <ul class="menuitems">
+        <li class="active"><a href="index.html">Inicio</a></li>
+        <li><a href="seccion2.html">Velas</a></li>
+        <li><a href="seccion3.html">Souvenirs</a></li>
+        <li><a href="seccion4.html">DECO</a></li>
+        <li><a href="seccion5.html">Contacto</a></li>
+        <div class="form-">
+          <form class="buscador" action="" method="get">
+            <input type="text" value="" placeholder="Buscar producto" />
+            <button class="botonbuscar" type="submit"><i class="fas fa-search"></i></button>
+          </form>
+        </div>
+        <span class="menuboton"><i class="fa fa-bars"></i></span>
+        <span class="carrito"><a href="#"><i class="fas fa-shopping-cart"></i></a></span>
+    </nav>
+  </header>
+  <!--fin nav-->
+  <div class="content animate__fadeIn">
+    <h1 class="logo">Contacto</h1>
+    <div class="contact-wrapper">
+      <div class="contact-form">
+        <form action="">
+          <h2>Contactanos</h2>
+          <p>
+            <label for="nombre">Nombre completo</label>
+            <input type="text" name="nombre" id="nombre" required />
+          </p>
+          <p>
+            <label for="correo">Dirección de correo electrónico</label>
+            <input type="text" name="correo" id="correo" required />
+          </p>
+          <p>
+            <label for="numero">Número de teléfono</label>
+            <input type="tel" name="tel" id="tel" pattern="[0-3]{3}-[0-9]{4}-[0-9]{4}" required />
+          </p>
+          <p>
+            <label for="asunto">Asunto</label>
+            <input type="text" name="asunto" id="asunto" />
+          </p>
+          <p class="block">
+            <label for="mensaje">Ingrese motivo de contacto</label>
+            <textarea name="mensaje" rows="5"></textarea>
+          </p>
+          <p class="block">
+            <button type="submit">ENVIAR</button>
+            <button type="reset">Limpiar formulario</button>
+          </p>
+        </form>
+      </div>
+      <div class="infocontacto">
+        <h4>Más información</h4>
+        <ul>
+          <li>
+            <i class="fab fa-whatsapp-square"></i><span></span><a
+              href="https://api.whatsapp.com/send?phone=541160548586" target="_blank">011 6054 8586</a>
+          </li>
+          <li>
+            <i class="fas fa-envelope"></i><span></span><a href="mailto:terradreams@hotmail.com">
+              terradreams@hotmail.com</a>
+          </li>
+          <li>
+            <i class="fab fa-facebook-square"></i><span></span><a href="https://www.facebook.com/terra.dreamss/"
+              target="_blank">Terra Dreams</a>
+          </li>
+          <li>
+            <i class="fab fa-instagram-square"></i><span></span><a href="https://www.instagram.com/terradreams_"
+              target="_blank">@terradreams_</a>
+          </li>
+        </ul>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet
+          impedit laudantium, laborum nisi dolor ex facilis quae tempore,
+          nihil minima cumque doloremque autem consequuntur ad officiis ab,
+          odio soluta rem?
+        </p>
+      </div>
+    </div>
+  </div>
+  <!--FOOTER-->
+  <footer id="footer">
+    <div class="container">
+      <div class="correo">
+        <legend>
+          <fieldset>
+            <h5>Suscribite al Newsletter</h5>
+            <form action="" method="get">
+              <input type="text" class="textf" placeholder="Ingresa tu mail" />
+              <button class="input-button" type="submit"><i class="fas fa-thumbs-up"></i></button>
+            </form>
+          </fieldset>
+        </legend>
+      </div>
+      <!--REDES SOCIALES-->
+      <div class="redes">
+        Terra Dreams en las redes, seguinos y enterate de las novedades.
+        <a href="https://api.whatsapp.com/send?phone=541160548586" target="_blank">
+          <img src="..\images\whatsapp.ico" alt="Escribinos al celular" width="16px" height="16px" />
+        </a>
+        <a href="https://www.facebook.com/terra.dreamss/" target="_blank">
+          <img src="..\images\facebook.ico" alt="Visitanos en Facebook" width="16px" height="16px" />
+        </a>
+        <a href="https://www.instagram.com/terradreams_/" target="_blank">
+          <img src="..\images\instagram.ico" alt="Instagram" width="16px" height="16px" />
+        </a>
+        <div id="content-footer">
+          <label id="lbl-footer">Todos los derechos reservados © 2022</label>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

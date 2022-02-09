@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terra Dreams</title>
+  <!--CSS-->
+  <link rel="stylesheet" href="estilos.css" />
+  <!--GOOGLE FONTS-->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet" />
+  <!--FONTAWESOME-->
+  <script src="https://kit.fontawesome.com/b2a02d1612.js" crossorigin="anonymous"></script>
+  <!--CSS ANIMADO-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="shortcut icon" href="..\images\tdicon.ico" type="image" />
+</head>
+
+<body>
+  <!--inicio header y barra de navegacion-->
+  <header>
+    <nav class="menu">
+      <label><a class="imagenlogo" href="index.html"><img src="..\images\tdsinfondo.png" /></a></label>
+      <ul class="menuitems">
+        <li class="active"><a href="index.html">Inicio</a></li>
+        <li><a href="seccion2.html">Velas</a></li>
+        <li><a href="seccion3.html">Souvenirs</a></li>
+        <li><a href="seccion4.html">DECO</a></li>
+        <li><a href="seccion5.html">Contacto</a></li>
+        <div class="form-">
+          <form class="buscador" action="" method="get">
+            <input type="text" value="" placeholder="Buscar producto" />
+            <button class="botonbuscar" type="submit"><i class="fas fa-search"></i></button>
+          </form>
+        </div>
+        <span class="menuboton"><i class="fa fa-bars"></i></span>
+        <span class="carrito"><a href="#"><i class="fas fa-shopping-cart"></i></a></span>
+    </nav>
+  </header>
+  <!--fin barra navegacion-->
+  <!--INICIO GRID-->
+  <div class="muestraprod  animate__fadeIn">
+    <div class="grid-container">
+      <article class="lista">
+        <a class="titulo" href="seccion2.html">
+          Velas </a>
+        <div class="imagen">
+          <a href="#">
+            <img width="285" height="206" src="..\images\velas.jpg">
+          </a>
+        </div>
+      </article>
+      <article class="lista">
+        <a class="titulo" href="seccion4.html">
+          Plantas </a>
+        <div class="imagen">
+          <a href="#">
+            <img width="285" height="206" src="..\images\planta.jpg"> </a>
+        </div>
+      </article>
+      <article class="lista">
+        <a class="titulo" href="seccion3.html">
+          Souvenirs </a>
+        <div class="imagen">
+          <a href="#">
+            <img width="285" height="206" src="..\images\cactus.jpg"> </a>
+        </div>
+      </article>
+      <article class="lista">
+        <a class="titulo" href="#">
+          Variedad </a>
+        <div class="imagen">
+          <a href="#">
+            <img width="285" height="206" src="..\images\velaplanta.jpg"> </a>
+        </div>
+      </article>
+    </div>
+  </div>
+  <!--articles-->
+  <article>
+    <fieldset class="cuadro  animate__fadeIn">
+      <ul>
+        <strong>
+          <li><a href="#">◄ Tips y cuidados ►</a></li>
+          <li><a href="#">◄ Envíos ►</a></li>
+          <li><a href="#">◄ Asesoramiento pre/post venta ►</a></li>
+        </strong>
+      </ul>
+    </fieldset>
+  </article>
+  <!--promociones-->
+  <h2 class="promocion animate__fadeIn">Promociones</h2>
+  <div class="conte_parent">
+    <div class="conte">
+      <a href="#">
+        <div class="card">
+          <img src="..\images\cactus.jpg" width="200" height="150" />
+        </div>
+        <div class="informacion">
+          <h1>Promoción 1</h1>
+          <ul>
+            <li>ITEM 1</li>
+            <li>ITEM 2</li>
+            <li>ITEM 3</li>
+          </ul>
+        </div>
+        <div class="precio">
+          <div class="box-precio">
+            <span class="precio1"><strike>$50.00</strike> </span>
+            <span class="precio2"><strong>$35.00</strong></span>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="conte">
+      <a href="#">
+        <div class="card">
+          <img src="..\images\cactus.jpg" width="200" height="150" />
+        </div>
+        <div class="informacion">
+          <h1>Promoción 2</h1>
+          <ul>
+            <li>ITEM 1</li>
+            <li>ITEM 2</li>
+            <li>ITEM 3</li>
+          </ul>
+        </div>
+        <div class="precio">
+          <div class="box-precio">
+            <span class="precio1"><strike>$50.00</strike> </span>
+            <span class="precio2"><strong>$35.00</strong></span>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="conte">
+      <a href="#">
+        <div class="card">
+          <img src="..\images\cactus.jpg" width="200" height="150" />
+        </div>
+        <div class="informacion">
+          <h1>Promoción 3</h1>
+          <ul>
+            <li>ITEM 1</li>
+            <li>ITEM 2</li>
+            <li>ITEM 3</li>
+          </ul>
+        </div>
+        <div class="precio">
+          <div class="box-precio">
+            <span class="precio1"><strike>$50.00</strike> </span>
+            <span class="precio2"><strong>$35.00</strong></span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+  <!--fin promociones-->
+  <!--article1-->
+  <article>
+    <legend class="animate__fadeIn">
+      <fieldset>
+        <h2 class="pagos">Todos los medios de pago habilitados</h2>
+        <div>
+          <img src="..\images\depositotransferencia.png" width="90" height="75px">
+          <img src="..\images\efvo.png" width="90px" height="75px">
+          <img src="..\images\MP.jpg" width="120px" height="60px">
+        </div>
+      </fieldset>
+    </legend>
+  </article>
+  <!--inicio footer-->
+  <footer id="footer">
+    <div class="container">
+      <div class="correo">
+        <legend>
+          <fieldset>
+            <h5>Suscribite al Newsletter</h5>
+            <form action="" method="get">
+              <input type="text" class="textf" placeholder="Ingresa tu mail" />
+              <button class="input-button" type="submit"><i class="fas fa-thumbs-up"></i></button>
+            </form>
+          </fieldset>
+        </legend>
+      </div>
+      <!--REDES SOCIALES-->
+      <div class="redes">
+        Terra Dreams en las redes, seguinos y enterate de las novedades.
+        <a href="https://api.whatsapp.com/send?phone=541160548586" target="_blank">
+          <img src="..\images\whatsapp.ico" alt="Escribinos al celular" width="16px" height="16px" />
+        </a>
+        <a href="https://www.facebook.com/terra.dreamss/" target="_blank">
+          <img src="..\images\facebook.ico" alt="Visitanos en Facebook" width="16px" height="16px" />
+        </a>
+        <a href="https://www.instagram.com/terradreams_/" target="_blank">
+          <img src="..\images\instagram.ico" alt="Instagram" width="16px" height="16px" />
+        </a>
+      </div>
+      <div id="content-footer">
+        <label id="lbl-footer">Todos los derechos reservados © 2022</label>
+      </div>
+    </div>
+  </footer>
+  <!--fin footer-->
+</body>
+
+</html>
