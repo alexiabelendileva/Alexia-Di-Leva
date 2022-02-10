@@ -87,6 +87,7 @@
    transition: .4s;
 }
 .carrito{
+   display: block;
    font-size: 1.875rem;
 }
 .buscador{
