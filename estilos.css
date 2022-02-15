@@ -1,69 +1,57 @@
 .muestraprod {
    margin: 1.25rem;
 }
-
-
 body{
    font-family: quicksand;
    background-color: white;
 }
-.menu{
-   background-color: red;
-   height: 75px;
-   width: 100vw;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   border-bottom: 1px solid white;
-   box-shadow: 5px 0 10px rgba(0,0,0,.6);
+.imagen img{
+   border-radius: 30px;
+   padding: .8rem;
 }
-.logo{
-   color: black;
-   font-size: 35px;
-   padding: 0 80px;
-   font-weight: bold;
-}
-.menu_items{
-   display: flex;
-   list-style: none;
-   margin-right: 30px;
-}
-.menu_items{
-   border-radius: 3px;
-   margin: 0 5px;
-}
-.menu_items li a{
-   padding: 7px 13px;
-   text-decoration: none;
-   font-size: 18px;
-   display: block;
-   color: black;
-}
-.menu_items li:hover,
-.btn_menu:hover{
-   background-color: rgba(0, 0, 0, 0.308);
+.lista a:hover{
+   color: pink;
    transition: .4s;
 }
-.btn_menu{
-   margin-right: 30px;
-   font-size: 25px;
-   color: black;
-   cursor: pointer;
-   display: none;
+.titulo h4{
+   text-align: center;
+   font-weight: bold;
+   margin-bottom: 2px;
 }
-ul.show{
-   top:65px;
+.lista:hover{
+   background-color: rgba(143, 76, 76, 0.308);
+   transition: .4s;
+   border-radius: 20px;
 }
+
+.muestraprod{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+}
+/* MEDIA */
 @media screen and (max-width:768px) {
+   .body {
+      margin: 0;
+      padding: 0;
+   }
    .navbar{
       height: 65px;}
    .collapse {
-      background-color: pink;
+      transition: background-color 1s ease-in;
+      border: 2px solid rgba(0, 0, 0, 0.24);
+      background-color: rgba(153, 90, 100, 0.432);
       text-align: center;
       font-weight: bold;
    }
-   .buscador button:hover{
-      background-color: rgba(0, 0, 0, .3);
+   .navbar-nav .nav-item,
+   .carrito{
+      background-color: rgb(189, 129, 139);
+      border: 2px solid rgba(0, 0, 0, 0.24);
+   }
+   .buscador button:hover,
+   .carrito:hover{
+      background-color: rgba(63, 61, 61, 0.849);
       transition: .4s;
    }
    .carrito{
@@ -72,7 +60,30 @@ ul.show{
       margin-left: .9rem;
       padding: .5rem;
    }
+   
+   .correo {
+      width: 100%;
+   }
+   .correo .textf{
+      width: 100%;
+   }
+   fieldset {
+      width: 100%;
+   }
+   .conte_parent {
+      display: flex;
+      flex-wrap: wrap;
+   }
+   .deco {
+      font-size: 45px;
+      text-align: center;
+   }
+   .velas {
+      font-size: 45px;
+      text-align: center;
+   }
 }
+/* FIN MEDIA */
 .navbar{ 
    height: 5rem;
    background: linear-gradient(to bottom, rgba(238, 148, 148, 0.616), rgba(255, 130, 130, 0.281), rgba(255, 255, 255, 0));
@@ -100,7 +111,7 @@ ul.show{
 }
 .navbar-nav li:hover,
 .carrito:hover{
-   background-color: rgba(0, 0, 0, .3);
+   background-color: rgba(212, 159, 159, 0.925);
    transition: .4s;
 }
 .buscador {
@@ -124,39 +135,13 @@ ul.show{
 }
 
 .buscador input {
-   width: 25em;
+   width: 20em;
    padding: 0.625rem;
    border-radius: 1.25rem;
    background: none;
    border: 0.188rem solid #000000c2;
 }
-@media screen and (max-width:993px) {
-   body {
-      margin: 0;
-      padding: 0;
-   }
-   footer {
-      width: 100vw;
-   }
 
-   fieldset {
-      width: 100%;
-   }
-
-   .conte_parent {
-      display: flex;
-      flex-wrap: wrap;
-   }
-   .deco {
-      font-size: 45px;
-      text-align: center;
-   }
-
-   .velas {
-      font-size: 45px;
-      text-align: center;
-   }
-}
 
 ::placeholder {
    text-align: center;
@@ -442,9 +427,9 @@ body {
 
 .contact-form button:hover,
 .contact-form button:focus {
-   background: #777619;
+   background: #272710b6;
    color: black;
-   transition: background-color 1s ease-out;
+   transition: background-color .5s ease-out;
 }
 
 .contact-form form p {
@@ -457,7 +442,7 @@ body {
    width: 100%;
    padding: 0.688rem;
    background: none;
-   border-bottom: 0.063rem solid #1d1d07;
+   border-bottom: 0.063rem solid #5858165b;
    border-radius: 1.25rem;
 }
 
@@ -486,9 +471,9 @@ body {
 }
 
 .contact-form button {
-   background: #35350d;
+   background: #5555178a;
    border: none;
-   text-transform: uppercase;
+   font-weight: bold;
    padding: 1rem;
 }
 
