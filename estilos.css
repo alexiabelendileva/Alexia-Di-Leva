@@ -9,6 +9,9 @@ body{
    border-radius: 30px;
    padding: .8rem;
 }
+nav{
+   position:sticky
+}
 .lista a:hover{
    color: pink;
    transition: .4s;
@@ -30,7 +33,7 @@ body{
    flex-wrap: wrap;
 }
 /* MEDIA */
-@media screen and (max-width:768px) {
+@media screen and (max-width:1020px) {
    .body {
       margin: 0;
       padding: 0;
@@ -40,7 +43,7 @@ body{
    .collapse {
       transition: background-color 1s ease-in;
       border: 2px solid rgba(0, 0, 0, 0.24);
-      background-color: rgba(153, 90, 100, 0.432);
+      background-color: rgba(209, 153, 162, 0.644);
       text-align: center;
       font-weight: bold;
    }
@@ -54,13 +57,23 @@ body{
       background-color: rgba(63, 61, 61, 0.849);
       transition: .4s;
    }
+   .buscador input{
+      width: 10rem;
+   }
+   .buscador input::placeholder{
+      color: #000000;
+      font-weight: bold;
+   }
    .carrito{
-      margin-bottom: .5rem;
+      margin-bottom: .7rem;
       margin-top: 1rem;
       margin-left: .9rem;
+      margin-right: .9rem;
       padding: .5rem;
    }
-   
+   .buscador {
+      padding-bottom: 1rem;
+   }
    .correo {
       width: 100%;
    }
@@ -98,7 +111,6 @@ body{
 
 .carrito {
    color: black;
-   
    font-size: 30px;
 }
 .navbar-nav li{
@@ -332,13 +344,16 @@ fieldset h5 {
    margin: auto;
    border-radius: 1.25rem;
 }
-
+.producto:hover{
+   cursor: pointer;
+   transform: scale(1.05);
+   transition: all 0.9s;
+}
 .producto h5 {
    font-size: 1.063rem;
    text-align: center;
    margin-bottom: 0.938rem;
 }
-
 .producto .preciop {
    background-color: rgba(128, 128, 128, 0.377);
    text-align: center;
@@ -348,6 +363,8 @@ fieldset h5 {
    margin-bottom: 1.25rem;
    padding-bottom: 0.188rem;
    padding-top: 0.188rem;
+   margin-left: .5rem;
+   margin-right: .5rem;
 }
 
 .producto p i {
@@ -358,6 +375,8 @@ fieldset h5 {
    border-radius: 0.625rem;
    padding-bottom: 0.188rem;
    padding-top: 0.188rem;
+   margin-left: .5rem;
+   margin-right: .5rem;
 }
 
 .velas {
