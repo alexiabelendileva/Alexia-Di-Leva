@@ -4,17 +4,89 @@
     padding: 0;
  }
  body{
+     font-weight: none;
     font-family: quicksand;
     background-color: rgb(218, 69, 69);
  }
+//PRUEBA
+.name{
+    font-weight: bold;
+    font-size: large;
+}
+.row {
+  padding-bottom: 30px;
+  width: 100%;
+  justify-content: flex-start;
+  display: flex;
+  flex-flow: row wrap;
+}
+.product, .product--1, .product--2, .product--3, .product--4 {
+  border-radius: 10px 85px / 120px;
+  box-shadow: 1px 5px 15px rgba(27, 20, 20, 0.904);
+  width: 15em;
+  height: auto;
+  padding: 2em;
+  margin: 1em;
+  overflow: hidden;
+  position: relative;
+  flex: auto;
+}
+.product--1:hover,.product--2:hover,.product--3:hover,.product--4:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.9s;
+ }
+.product--1 {
+  background:linear-gradient(#df759d9a, #a6c259);
+}
+.product--2 {
+  background: linear-gradient(#d2d42d9a, #c46494bb);
+}
+.product--3 {
+  background: linear-gradient(#df759d9a, #a6c259);
+}
+.product--4 {
+  background: linear-gradient(#d2d42d9a, #c46494bb);
+}
+.product img, .product--1 img, .product--2 img, .product--3 img, .product--4 img {
+    box-shadow: 0.188rem 0.188rem 1.25rem 0.188rem;
+    border-radius: 20px;
+  max-width: 100%;
+  height: auto !important;
+  text-align: center;
+}
+.product_inner {
+  display: flex;
+  align-items: center;
+  flex-flow: column wrap;
+}
+.product_inner p {
+  color: rgba(38, 44, 27, 0.9);
+}
+.product_inner button {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  color: rgb(0, 0, 0);
+  padding: 1em 3em;
+  margin: 1em 0 0 0;
+  background: none;
+  cursor: pointer;
+  transition: background ease-in 0.25s;
+}
+.product_inner button:hover {
+  background: white;
+  color: #19250c;
+}
+.product_inner button:before {
+  font-family: FontAwesome;
+  content: "";
+  color: rgb(0, 0, 0);
+  position: absolute;
+  font-size: 1.5em;
+  margin: 0 -1.5em;
+}
  .imagen img{
     border-radius: 30px;
-    padding: .8rem;
- }
- 
- .lista a:hover{
-    color: pink;
-    transition: .4s;
+    padding-top: .8rem;
  }
  .titulo h4{
     margin-top: 5px;
@@ -22,7 +94,14 @@
     font-weight: bold;
     margin-bottom: 2px;
  }
- .lista:hover{
+ .lista{
+     margin-top: 50px;
+     padding-left: 15px;
+     padding-right: 15px;
+     padding-bottom: 15px;
+ }
+ .lista:hover,.lista a:hover{
+     color:pink;
     background-color: rgba(143, 76, 76, 0.308);
     transition: .4s;
     border-radius: 20px;
@@ -82,9 +161,7 @@
     .correo .textf{
        width: 100%;
     }
-    fieldset {
-       width: 100%;
-    }
+
     .conte_parent {
        display: flex;
        flex-wrap: wrap;
@@ -97,9 +174,6 @@
     .velas {
        font-size: 45px;
        text-align: center;
-    }
-    button.botonbuscar{
-        text-align: center;
     }
  }
  /* FIN MEDIA */
@@ -167,37 +241,18 @@
     color: rgba(54, 54, 54, 0.514);
  }
  
- article {
-    margin: .5rem;
-    font-size: 1.563rem;
- }
- 
- article li {
-    margin: 0.625rem;
- }
- 
- article li:hover {
-    background-color: rgba(199, 120, 120, 0.507);
-    transition: .4s;
- }
  
  a {
     color: black;
     text-decoration: none;
  }
  
- .listatips a {
-    color: black;
-    text-decoration: none;
- }
+
  .conte a {
     color: black;
     text-decoration: none;
  }
  
- section fieldset {
-    border-radius: 1.25rem;
- }
  
  .informacion ul,
  .informacion,
@@ -231,30 +286,7 @@
     background: #807e1c;
     color: #1d1d07;
  }
- 
- .informacion h1 {
-    text-align: center;
- }
- 
- .conte_parent {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
- }
- 
- .conte {
-    padding: 15px;
-    border-radius: 20px;
- }
- 
- .conte:hover {
-    background-color: rgba(41, 35, 35, 0.479);
-    transition: .4s;
- }
- 
- .conte_parent img {
-    border-radius: 20px;
- }
+
  
  section {
     width: 100%;
@@ -279,8 +311,8 @@
  }
  
  .promocion {
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 30px;
+    margin-bottom: 50px;
     font-size: 50px;
     text-align: center;
     font-weight: bold;
@@ -323,14 +355,11 @@
     background-color: rgba(41, 35, 35, 0.479);
     transition: .4s;
  }
- 
- fieldset h5 {
-    font-size: 1.063rem;
-    padding-right: .5em;
-    color: #000000;
+ .article{
     font-weight: bold;
+    text-align: center;
+    padding: 50px 0px;
  }
- 
  /* COMIENZO SECCION 2 */
  .fotoprod {
     padding: 0.625rem;
