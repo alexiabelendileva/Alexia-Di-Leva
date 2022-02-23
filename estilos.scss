@@ -21,7 +21,7 @@
   flex-flow: row wrap;
 }
 .product, .product--1, .product--2, .product--3, .product--4 {
-  border-radius: 10px 85px / 120px;
+  border-radius: 15px 85px / 120px;
   box-shadow: 1px 5px 15px rgba(27, 20, 20, 0.904);
   width: 15em;
   height: auto;
@@ -101,8 +101,8 @@
      padding-bottom: 15px;
  }
  .lista:hover,.lista a:hover{
-     color:pink;
-    background-color: rgba(143, 76, 76, 0.308);
+     color:rgb(253, 223, 228);
+    background-color: rgba(143, 76, 76, 0.507);
     transition: .4s;
     border-radius: 20px;
  }
@@ -356,9 +356,13 @@
     transition: .4s;
  }
  .article{
-    font-weight: bold;
     text-align: center;
     padding: 50px 0px;
+ }
+ .pagos{
+     color: #000000;
+    font-size: 50px;
+    font-weight: bold;
  }
  /* COMIENZO SECCION 2 */
  .fotoprod {
@@ -455,7 +459,7 @@
  body {
     display: grid;
     background-color: coral;
-    background-image: url(https://cdn.pixabay.com/photo/2021/06/04/11/10/plants-6309538_960_720.png);
+    background-image: url(https://previews.123rf.com/images/da6kin/da6kin1604/da6kin160400733/55216678-modelo-incons%C3%BAtil-de-la-moda-con-hojas-de-color-rosa-se-puede-utilizar-para-fondos-de-pantalla-textu.jpg?fj=1);
     background-size: cover;
     color: #242405;
     font-family: quicksand;
