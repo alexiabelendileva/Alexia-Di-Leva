@@ -14,8 +14,8 @@ $pixel:(
     h2:15px,
     h3:20px,
     h4:25px,
-    h5:30px
-    h6:50px
+    h5:30px,
+    h6:50px,
 );
 .name{
     font-weight: bold;
@@ -178,7 +178,8 @@ $colorfondo4: #d2d42d9a;
     }
 
     .conte_parent {
-        @extend %flex;
+     display: flex;
+    flex-wrap: wrap;
        flex-shrink: 1;
     }
     .deco {
@@ -266,8 +267,6 @@ $colorfondo4: #d2d42d9a;
     color: black;
     text-decoration: none;
  }
- 
- 
  .informacion ul,
  .informacion,
  .precio {
@@ -278,23 +277,23 @@ $colorfondo4: #d2d42d9a;
  
  .informacion {
     border-radius: 5px 110px / 80px;
+    h1 {
+        margin-top: 1.25rem;
+        font-size: 1.563rem;
+     }
+     ul {
+        border-radius: 100px 10px / 120px;
+        list-style: none;
+        text-align: center;
+     }
  }
- 
- .informacion h1 {
-    margin-top: 1.25rem;
-    font-size: 1.563rem;
- }
- 
+
  .precio {
     list-style: none;
     text-align: center;
  }
  
- .informacion ul {
-    border-radius: 100px 10px / 120px;
-    list-style: none;
-    text-align: center;
- }
+ .informacion 
  
  .precio {
     background: #807e1c;
@@ -345,7 +344,26 @@ $colorfondo4: #d2d42d9a;
  #footer {
     text-align: center;
  }
- 
+ .content-footer{
+     a{
+         text-decoration: none;
+         font-weight: bold;
+         font-size: large;
+     }
+     a:hover{
+        transition-property: background-color, color, left;
+        transition-duration: .5s;
+        -webkit-transition-property: background-color, color, left;
+        -webkit-transition-duration: .5s;
+        -o-transition-property: background-color, color, left;
+        -o-transition-duration: .5s;
+        text-align: center;
+        background-color: rgba(241, 57, 186, 0.486);
+        border: 2px solid rgba(63, 22, 51, 0.486);
+        left: 90%;
+        color: rgb(0, 0, 0);
+     }
+ }
  #icono {
     text-align: right;
  }
@@ -402,7 +420,6 @@ $colorfondo4: #d2d42d9a;
  .item3 {
     grid-area: c;
  }
- 
  .fotoprod img {
     display: block;
     margin: auto;
@@ -413,54 +430,58 @@ $colorfondo4: #d2d42d9a;
     transform: scale(1.05);
     transition: all 0.9s;
  }
- .producto h5 {
+
+ .producto {
+     h5 {
     font-size: 1.063rem;
     text-align: center;
     margin-bottom: 0.938rem;
+    }
+    .preciop {
+        background-color: rgba(128, 128, 128, 0.377);
+        text-align: center;
+        box-shadow: 0.188rem 0.188rem 1.25rem 0.188rem;
+        border-radius: 0.625rem 6.25rem / 7.5rem;
+        margin-top: 0.625rem;
+        margin-bottom: 1.25rem;
+        padding-bottom: 0.188rem;
+        padding-top: 0.188rem;
+        margin-left: .5rem;
+        margin-right: .5rem;
+     }
+     button{
+        text-align: center;
+     }
+     p i {
+        background-color: rgba(104, 102, 102, 0.726);
+        text-align: center;
+        display: block;
+        box-shadow: 0.188rem 0.188rem 1.25rem 0.188rem;
+        border-radius: 0.625rem;
+        padding-bottom: 0.188rem;
+        padding-top: 0.188rem;
+        margin-left: .5rem;
+        margin-right: .5rem;
+     }
+     
  }
- .producto .preciop {
-    background-color: rgba(128, 128, 128, 0.377);
-    text-align: center;
-    box-shadow: 0.188rem 0.188rem 1.25rem 0.188rem;
-    border-radius: 0.625rem 6.25rem / 7.5rem;
-    margin-top: 0.625rem;
-    margin-bottom: 1.25rem;
-    padding-bottom: 0.188rem;
-    padding-top: 0.188rem;
-    margin-left: .5rem;
-    margin-right: .5rem;
- }
- 
- .producto p i {
-    background-color: rgba(104, 102, 102, 0.726);
-    text-align: center;
-    display: block;
-    box-shadow: 0.188rem 0.188rem 1.25rem 0.188rem;
-    border-radius: 0.625rem;
-    padding-bottom: 0.188rem;
-    padding-top: 0.188rem;
-    margin-left: .5rem;
-    margin-right: .5rem;
- }
- 
- .velas {
+ @mixin alintit {
     margin-top: 1.25rem;
     margin-bottom: 1.25rem;
     text-align: center;
+ }
+ .velas {
+  @include alintit()
  }
  
  /* COMIENZO SECCION 3 */
  .souvenirs {
-    margin-top: 1.25rem;
-    margin-bottom: 1.25rem;
-    text-align: center;
+  @include alintit()
  }
  
  /* COMIENZO SECCION 4 */
  .deco {
-    margin-top: 1.25rem;
-    margin-bottom: 1.25rem;
-    text-align: center;
+@include alintit()
  }
  
  /*COMIENZO SECCION 5*/
@@ -501,6 +522,7 @@ $colorfondo4: #d2d42d9a;
  .contact-wrapper>* {
     padding: 1em;
  }
+
  @mixin buttoninfo {
     background: #272710b6;
     color: black;

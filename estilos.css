@@ -127,9 +127,12 @@ body {
 
 .muestraprod {
   display: flex;
+  flex-wrap: wrap;
+}
+
+.muestraprod {
   flex-direction: row;
   justify-content: space-around;
-  flex-wrap: wrap;
   overflow: hidden;
 }
 
@@ -297,24 +300,22 @@ a {
 .informacion {
   border-radius: 5px 110px/80px;
 }
-
 .informacion h1 {
   margin-top: 1.25rem;
   font-size: 1.563rem;
 }
-
-.precio {
-  list-style-type: none;
-  text-align: center;
-}
-
 .informacion ul {
   border-radius: 100px 10px/120px;
-  list-style-type: none;
+  list-style: none;
   text-align: center;
 }
 
 .precio {
+  list-style: none;
+  text-align: center;
+}
+
+.informacion .precio {
   background: #807e1c;
   color: #1d1d07;
 }
@@ -363,6 +364,25 @@ section ul {
 
 #footer {
   text-align: center;
+}
+
+.content-footer a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: large;
+}
+.content-footer a:hover {
+  transition-property: background-color, color, left;
+  transition-duration: 0.5s;
+  -webkit-transition-property: background-color, color, left;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-property: background-color, color, left;
+  -o-transition-duration: 0.5s;
+  text-align: center;
+  background-color: rgba(241, 57, 186, 0.486);
+  border: 2px solid rgba(63, 22, 51, 0.486);
+  left: 90%;
+  color: black;
 }
 
 #icono {
@@ -439,7 +459,6 @@ section ul {
   text-align: center;
   margin-bottom: 0.938rem;
 }
-
 .producto .preciop {
   background-color: rgba(128, 128, 128, 0.377);
   text-align: center;
@@ -452,7 +471,9 @@ section ul {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
 }
-
+.producto button {
+  text-align: center;
+}
 .producto p i {
   background-color: rgba(104, 102, 102, 0.726);
   text-align: center;
@@ -528,19 +549,6 @@ body {
   background-color: rgba(231, 203, 203, 0.87);
   display: grid;
 }
-
-.contact-form button:hover,
-.contact-form button:focus {
-  background: #272710b6;
-  color: black;
-  transition: background-color 0.5s ease-out;
-}
-
-.contact-form form p {
-  margin: 0;
-  padding: 1rem;
-}
-
 .contact-form button {
   display: inline-block;
   width: 75%;
@@ -551,27 +559,38 @@ body {
   border-radius: 10px 100px/120px;
   box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.589);
 }
-
+.contact-form button:hover {
+  background: #272710b6;
+  color: black;
+  transition: background-color 0.5s ease-out;
+}
+.contact-form button:focus {
+  background: #272710b6;
+  color: black;
+  transition: background-color 0.5s ease-out;
+}
+.contact-form form p {
+  margin: 0;
+  padding: 1rem;
+}
 .contact-form form .block {
   grid-template-columns: 2fr/1fr;
 }
-
 .contact-form input {
   width: 100%;
   padding: 0.688rem;
   border: none;
   background: none;
-  border-bottom: 0.063rem solid #1d1d07;
+  border-bottom: 0.063rem solid #5858165b;
   color: #0e0e02;
 }
-
 .contact-form textarea {
   resize: none;
   width: 100%;
   padding: 0.688rem;
   border: none;
   background: none;
-  border-bottom: 0.063rem solid #1d1d07;
+  border-bottom: 0.063rem solid #5858165b;
   color: #0e0e02;
 }
 
@@ -586,21 +605,22 @@ body {
   background: #bbb954;
   color: #202002;
 }
-
-.infocontacto h4,
-.infocontacto ul,
-.infocontacto p {
+.infocontacto h4 {
   text-align: center;
   margin: 0 0 3rem 0;
 }
-
 .infocontacto ul {
+  text-align: center;
+  margin: 0 0 3rem 0;
   list-style: none;
   padding: 0;
 }
-
 .infocontacto ul li {
   padding: 0.313rem;
+}
+.infocontacto p {
+  text-align: center;
+  margin: 0 0 3rem 0;
 }
 
 @media screen and (min-width: 768px) {
