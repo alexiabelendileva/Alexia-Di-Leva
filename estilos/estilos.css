@@ -25,13 +25,12 @@ body {
 .product, .product--1, .product--2, .product--3, .product--4 {
   border-radius: 15px 85px/120px;
   box-shadow: 1px 5px 15px rgba(27, 20, 20, 0.904);
-  width: 18em;
+  width: 15em;
   height: auto;
   padding: 2em;
   overflow: hidden;
   position: relative;
   margin-bottom: 1em;
-  margin-left: 1.1em;
 }
 
 .product--1:hover, .product--2:hover, .product--3:hover, .product--4:hover {
@@ -194,6 +193,16 @@ body {
     display: flex;
     flex-wrap: wrap;
     flex-shrink: 1;
+  }
+
+  .deco {
+    font-size: 45px;
+    text-align: center;
+  }
+
+  .velas {
+    font-size: 45px;
+    text-align: center;
   }
 }
 /* FIN MEDIA */
@@ -481,9 +490,6 @@ section ul {
 }
 
 .velas {
-  font-size: 50px;
-  font-weight: bold;
-  text-align: center;
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
   text-align: center;
@@ -491,9 +497,6 @@ section ul {
 
 /* COMIENZO SECCION 3 */
 .souvenirs {
-  font-size: 50px;
-  font-weight: bold;
-  text-align: center;
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
   text-align: center;
@@ -501,15 +504,8 @@ section ul {
 
 /* COMIENZO SECCION 4 */
 .deco {
-  font-size: 50px;
-  font-weight: bold;
-  text-align: center;
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
-  text-align: center;
-}
-
-.pres {
   text-align: center;
 }
 
